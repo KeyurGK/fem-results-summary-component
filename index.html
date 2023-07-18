@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      /* .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      } */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        height: 60vh;
+        width: 45vw;
+        display: flex;
+        box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+        border-radius: 30px;
+      }
+      .result {
+        background: linear-gradient(
+          to bottom,
+          hsl(252, 100%, 67%),
+          hsl(241, 81%, 54%)
+        );
+        flex: 5;
+        border-radius: 30px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .result__header > h3 {
+        font-size: 18px;
+      }
+      .result__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: linear-gradient(
+          to bottom,
+
+          hsla(256, 72%, 46%, 1),
+          hsla(241, 72%, 46%, 0)
+        );
+        padding: 35px;
+      }
+      .result__content__line1 {
+        font-size: 64px;
+        font-weight: bolder;
+      }
+
+      .result__footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .result__footer > p {
+        text-align: center;
+      }
+      .summary {
+        flex: 5;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 0px;
+      }
+      .summary__header > h3 {
+        font-size: 28px;
+      }
+      .summary__content > div {
+        display: flex;
+        justify-content: space-between;
+        padding: 7px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
+      .summary__content__reaction {
+        background-color: hsla(0, 100%, 67%, 0.2);
+      }
+      .summary__content__memory {
+        background-color: hsla(39, 100%, 56%, 0.2);
+      }
+      .summary__content__verbal {
+        background-color: hsla(166, 100%, 37%, 0.2);
+      }
+      .summary__content__visual {
+        background-color: hsla(234, 85%, 45%, 0.2);
+      }
+      .summary__footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .summary__footer > button {
+        background-color: black;
+
+        border-radius: 30px;
+        width: 150px;
+        padding: 10px;
+        border: none;
+        color: hsl(0, 0%, 100%);
+      }
+      .summary__footer:hover > button {
+        background: linear-gradient(
+          to bottom,
+          hsl(252, 100%, 67%),
+          hsl(241, 81%, 54%)
+        );
+      }
+      @media screen and (max-width: 376px) {
+        .container {
+          flex-direction: column;
+          width: 100vw;
+          height: 100vh;
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="result">
+        <div class="result__header">
+          <h3>Your Result</h3>
+        </div>
+        <div class="result__content">
+          <div class="result__content__line1">76</div>
+          <div class="result__content__line2">of 100</div>
+        </div>
+        <div class="result__footer">
+          <h2>Great</h2>
+          <p>
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </div>
+
+      <div class="summary">
+        <div class="summary__header">
+          <h3>Summary</h3>
+        </div>
+        <div class="summary__content">
+          <div class="summary__content__reaction">
+            <img src="assets/images/icon-reaction.svg" />
+            <p1>Reaction</p1>
+            <p2>80 <span>/ 100</span></p2>
+          </div>
+          <div class="summary__content__memory">
+            <img src="assets/images/icon-memory.svg" />
+            <p1>Memory</p1>
+            <p2>92 <span>/ 100</span></p2>
+          </div>
+          <div class="summary__content__verbal">
+            <img src="assets/images/icon-verbal.svg" />
+            <p1>Verbal</p1>
+            <p2>61 <span>/ 100</span></p2>
+          </div>
+          <div class="summary__content__visual">
+            <img src="assets/images/icon-visual.svg" />
+            <p1>Visual</p1>
+            <p2>72 <span>/ 100</span></p2>
+          </div>
+        </div>
+        <div class="summary__footer">
+          <button>Continue</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Keyur G Kulkarni</a>.
+    </div> -->
+  </body>
+</html>
